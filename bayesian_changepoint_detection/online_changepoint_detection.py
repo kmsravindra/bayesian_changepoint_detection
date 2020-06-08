@@ -1,6 +1,7 @@
 from __future__ import division
 import numpy as np
 from scipy import stats
+import math
 
 def online_changepoint_detection(data, hazard_func, observation_likelihood):
     maxes = np.zeros(len(data) + 1)
